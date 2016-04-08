@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[LkpUSState]
+(
+	[USStateId] INT NOT NULL CONSTRAINT PK_STATEID PRIMARY KEY, 
+    [Caption] VARCHAR(2) NOT NULL, 
+    [Description] VARCHAR(100) NOT NULL, 
+    [CreateDate] DATETIME NOT NULL DEFAULT GetDate(), 
+    [LastUpdate] DATETIME NOT NULL DEFAULT GetDate()
+)

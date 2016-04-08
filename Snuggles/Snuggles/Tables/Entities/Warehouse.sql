@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Warehouse]
+(
+	[WarehouseId] INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_WAREHOUSEID PRIMARY KEY, 
+    [ItemId] INT NOT NULL, 
+    [Quantity] BIGINT NOT NULL DEFAULT 0, 
+    [Name] VARCHAR(50) NULL, 
+    [CreateDate] DATETIME NOT NULL DEFAULT GetDate(), 
+    [LastModified] DATETIME NOT NULL DEFAULT GetDate()
+)
